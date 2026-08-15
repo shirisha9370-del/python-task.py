@@ -6,13 +6,14 @@ TOPIC:Dictonaries
 
 
 
-1️⃣ Create a dictionary without using {} brackets
+1Q. Create a dictionary without using {} brackets
 
 d = dict(name="kumar", pin="101")
 print(d)
 Expected Output: { 'name':'kumar', 'pin':'101' }
-________________________________________
-2️⃣ Remove the last inserted key-value pair from a dictionary
+
+
+2Q. Remove the last inserted key-value pair from a dictionary
 (Hint: Use .popitem() method)
 
 d = {'a': 1, 'b': 2, 'c': 3}
@@ -20,8 +21,8 @@ d.popitem()
 print(d)
 
 Expected Output: {'a': 1, 'b': 2}
-________________________________________
-3️⃣ Check if a given key exists in a dictionary
+
+3Q. Check if a given key exists in a dictionary
 Input: d = {'a': 1, 'b': 2}, key = 'b'
 
 d = {'a': 1, 'b': 2}
@@ -29,27 +30,27 @@ key = 'b'
 print(key in d)
 
 Expected Output: True
-________________________________________
-4️⃣ Merge two dictionaries
+
+4Q. Merge two dictionaries
 Input:
 d1 = {'a': 1, 'b': 2}
 d2 = {'c': 3, 'd': 4}
 d1.update(d2)
 print(d1)
 
-
 Output: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
-________________________________________
-5️⃣ Find the length of a dictionary
+
+
+5Q.  Find the length of a dictionary
 Input: d = {'a': 1, 'b': 2, 'c': 3}
 
 d = {'a': 1, 'b': 2, 'c': 3}
 print(len(d))
 
 Output: 3
-________________________________________
 
-6️⃣ Count the frequency of each character in a string and store in a dictionary
+
+6Q. Count the frequency of each character in a string and store in a dictionary
 Input: "programming"
 
 text = "programming"
@@ -62,8 +63,8 @@ for i in text:
 print(d)
 
 Output: {'p':1, 'r':2, 'o':1, 'g':2, 'a':1, 'm':2, 'i':1, 'n':1}
-________________________________________
-7️⃣ Reverse keys and values of a dictionary
+
+7Q. Reverse keys and values of a dictionary
 Input: {'a': 1, 'b': 2, 'c': 3}
 
 d = {'a': 1, 'b': 2, 'c': 3}
@@ -73,9 +74,9 @@ for key, value in d.items():
 print(result)
 
 Output: {1: 'a', 2: 'b', 3: 'c'}
-________________________________________
 
-9️⃣ Create a dictionary from two lists
+
+9Q. Create a dictionary from two lists
 Input:
 keys = ['name', 'age', 'city']
 values = ['John', 25, 'New York']
@@ -86,8 +87,7 @@ print(prime)
 
 Output: {'name': 'John', 'age': 25, 'city': 'New York'}
 
-
-🔟 Group elements by frequency in a dictionary
+10Q. Group elements by frequency in a dictionary
 Input: [1, 2, 2, 3, 3, 3, 4]
 
 numbers = [1, 2, 2, 3, 3, 3, 4]
@@ -102,8 +102,8 @@ for i in numbers:
 print(d)
 
 Output: {1: 1, 2: 2, 3: 3, 4: 1}
-________________________________________
-1️⃣ Invert a dictionary with list values (group keys by their values)
+
+11Q. Invert a dictionary with list values (group keys by their values)
 Input:
 d = {'a': 1, 'b': 2, 'c': 1, 'd': 3}
 d = {'a': 1, 'b': 2, 'c': 1, 'd': 3}
@@ -113,16 +113,17 @@ for key, value in d.items():
 print(res)
 Output: {1: ['a', 'c'], 2: ['b'], 3: ['d']}
 
-________________________________________
-2️⃣Find common keys in two dictionaries
+
+12Q. Find common keys in two dictionaries
 Input: d1 = {'a': 1, 'b': 2, 'c': 3}
 d2 = {'b': 4, 'c': 5, 'd': 6}
 res = d1.keys() & d2.keys()
 print(result)
  
 Output: {'b', 'c'}
-________________________________________
-3️⃣ Sum of All Values in Dictionary
+
+
+13Q. Sum of All Values in Dictionary
 Given:
 d = {'a': 10, 'b': 20, 'c': 30}
 
@@ -131,9 +132,8 @@ total = sum(d.values())
 print(total)
 
 Output: 60
-________________________________________
 
-4️⃣ Find Max and Min Value in Dictionary
+14Q.  Find Max and Min Value in Dictionary
 Input: d = {'a': 10, 'b': 5, 'c': 15}
 
 d = {'a': 10, 'b': 5, 'c': 15}
@@ -143,9 +143,8 @@ print("Min Value =", min(d.values())
 
 Output: Max Value → 15
 Min Value → 5
-________________________________________________________________________________
 
-5️⃣Input :
+15Q. Input :
 R = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6}
 res = {}
 for key, value in R.items():
@@ -156,8 +155,8 @@ for key, value in R.items():
 print(res)
 
 Output=  {'a': 1, 'b': 4, 'c': 3, 'd': 8, 'e': 5, 'f': 12}
-________________________________________________________________________________
-6️⃣1.a=[0,1,2,3,4,5,6,7,8,9]
+
+16Q. 1.a=[0,1,2,3,4,5,6,7,8,9]
 
 a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 res= {}
@@ -167,9 +166,8 @@ print(res)
 
 output : {'even': [0, 2, 4, 6, 8], 'odd': [1, 3, 5, 7, 9]}
 
-________________________________________________________________________________
 
-7️⃣Given a list of words:
+17Q. Given a list of words:
 words = ["apple", "banana", "kiwi"]
 Create a dictionary with words as keys and their lengths as values
 
@@ -177,9 +175,9 @@ words = ["apple", "banana", "kiwi"]
 res= {word: len(word) for word in words}
 print(res)
 Expected Output:{'apple': 5, 'banana': 6, 'kiwi': 4}
-________________________________________________________________________________
 
-8️⃣ASCII Mapping for Lowercase Letters
+
+18Q. ASCII Mapping for Lowercase Letters
 Map each lowercase letter 'a' to 'z' to its ASCII value
 
 res = {chr(i): i for i in range(97, 123)}
