@@ -1,0 +1,67 @@
+   ASSIGNMENT
+
+DATE:06-08-2026
+TECHSTACK:PYTHON
+TOPIC: Dictionary Comprehension
+
+
+1️⃣ Filter Dictionary - Keep Items with Value Greater than 10
+Given dictionary:
+d = {'a': 5, 'b': 15, 'c': 25, 'd': 7}
+Create a new dictionary only with items where value > 10
+
+solution : d = {'a': 5, 'b': 15, 'c': 25, 'd': 7}
+result = {key: value for key, value in d.items() if value > 10}
+print(result)
+
+Expected Output:
+{'b': 15, 'c': 25}
+
+________________________________________
+2️⃣Nested Dictionary of Squares
+Create a dictionary from numbers 1 to 3, where each key has a dictionary with its square and cube.
+
+solution : result = {}
+    n: {'square': n**2, 'cube': n**3}
+    for n in range(1, 4):
+print(result)
+
+Expected Output:
+  1: {'square': 1, 'cube': 1},
+  2: {'square': 4, 'cube': 8},
+  3: {'square': 9, 'cube': 27}
+
+________________________________________
+ 3️⃣ASCII Mapping for Lowercase Letters
+Map each lowercase letter 'a' to 'z' to its ASCII value
+
+result = {chr(i): i for i in range(97, 123)}
+print(result)
+
+Expected Output:
+{'a': 97, 'b': 98, ..., 'z': 122}
+________________________________________
+4️⃣ Create Reverse Word Dictionary
+Given list of words:
+words = ["cat", "dog", "bat"]
+Create a dictionary with words as keys and their reversed strings as values.
+
+words = ["cat", "dog", "bat"]
+result = {word: word[::-1] for word in words}
+print(result)
+
+Expected Output:
+{'cat': 'tac', 'dog': 'god', 'bat': 'tab'}
+________________________________________
+5️⃣ Uppercase Keys
+Given list:
+letters = ['a', 'b', 'c']
+Create a dictionary with uppercase letters as keys and their ASCII values as values. 
+
+letters = ['a', 'b', 'c']
+result = {letter.upper(): ord(letter.upper()) for letter in letters}
+print(result)
+
+Expected Output:
+{'A': 65, 'B': 66, 'C': 67}
+
