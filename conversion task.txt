@@ -1,0 +1,61 @@
+ASSINMENT
+TASK:
+number conversion task conver the follow binary,octal and hehadecimal numbers into decimal integers.
+
+
+1.0b10111
+2.0b11001
+3.ob111111 
+4.0b100101
+5.0b1011010 
+6.0o17 
+7.0o25 
+8.0o76 
+9.0o123
+10.0o345
+11.0x1B 
+12.0x2F 
+13.0xAC
+14. 0x1D4
+15.0x3E8  
+
+# Binary numbers
+
+print(int("0b10111", 0))
+print(int("0b11001", 0))
+print(int("0b111111", 0))
+print(int("0b100101", 0))
+print(int("0b1011010", 0))
+
+# Octal numbers
+
+print(int("0o17", 0))
+print(int("0o25", 0))
+print(int("0o76", 0))
+print(int("0o123", 0))
+print(int("0o345", 0))
+
+# Hexadecimal numbers
+
+print(int("0x1B", 0))
+print(int("0x2F", 0))
+print(int("0xAC", 0))
+print(int("0x1D4", 0))
+print(int("0x3E8", 0))   
+
+OUTPUT: 
+23
+25
+63
+37
+90
+15
+21
+62
+83
+229
+27
+47
+172
+468
+1000                               
