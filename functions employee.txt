@@ -1,0 +1,97 @@
+ASSIGNMENT
+
+DATE:13-08-2026
+TECHSTACK:PYTHON
+TOPIC:Function’s
+
+
+1) Write a code to create employee details using nested functions
+
+
+*Add employee
+*Search employee
+*Update employee
+*Delete employee
+
+
+
+import random
+def employee_details():
+
+    employees = {}
+
+    def add_employee():
+        emp_id = int(input("Enter Employee ID: "))
+        name = input("Enter Employee Name: ")
+        salary = int(input("Enter Salary: "))
+
+        employees[emp_id] = {
+            "name": name,
+            "salary": salary
+        }
+
+        print("Employee added successfully")
+
+
+    def search_employee():
+        emp_id = int(input("Enter Employee ID: "))
+
+        if emp_id in employees:
+            print("Employee ID:", emp_id)
+            print("Name:", employees[emp_id]["name"])
+            print("Salary:", employees[emp_id]["salary"])
+        else:
+            print("Employee not found")
+
+
+    def update_employee():
+        emp_id = int(input("Enter Employee ID: "))
+
+        if emp_id in employees:
+            name = input("Enter new name: ")
+            salary = int(input("Enter new salary: "))
+
+            employees[emp_id]["name"] = name
+            employees[emp_id]["salary"] = salary
+
+            print("Employee updated successfully")
+        else:
+            print("Employee not found")
+
+
+    def delete_employee():
+        emp_id = int(input("Enter Employee ID: "))
+
+        if emp_id in employees:
+            del employees[emp_id]
+            print("Employee deleted successfully")
+        else:
+            print("Employee not found")
+
+
+    while True:
+        print("\n----- Employee Management -----")
+        print("1. Add Employee")
+        print("2. Search Employee")
+        print("3. Update Employee")
+        print("4. Delete Employee")
+        
+
+        n = input("Enter your choice: ")
+
+        if n == "1":
+            add_employee()
+
+        elif n  == "2":
+            search_employee()
+
+        elif n  == "3":
+            update_employee()
+
+        elif n == "4":
+            delete_employee()
+        else:
+              break
+
+        
+
